@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Ventas/Integrador/SistemasVentasWeb/web/Abastecimiento.jsp</file>
-            <file>file:/C:/Ventas/Integrador/SistemasVentasWeb/src/java/Controlador/Controlador.java</file>
-            <file>file:/C:/Ventas/Integrador/SistemasVentasWeb/src/java/Modelo/ProductoDAO.java</file>
-            <file>file:/C:/Ventas/Integrador/SistemasVentasWeb/src/java/Modelo/Producto.java</file>
-            <file>file:/C:/Ventas/Integrador/SistemasVentasWeb/src/java/Modelo/AbastecimientoDAO.java</file>
+            <file>file:/C:/GitHub/SistemaVentasPM/web/Proveedor.jsp</file>
+            <file>file:/C:/GitHub/SistemaVentasPM/web/Categoria.jsp</file>
+            <file>file:/C:/GitHub/SistemaVentasPM/src/java/Controlador/Controlador.java</file>
+            <file>file:/C:/GitHub/SistemaVentasPM/web/Clientes.jsp</file>
+            <file>file:/C:/GitHub/SistemaVentasPM/src/java/Controlador/Validar.java</file>
+            <file>file:/C:/GitHub/SistemaVentasPM/src/java/Modelo/AbastecimientoDAO.java</file>
         </group>
     </open-files>
 </project-private>
