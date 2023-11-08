@@ -22,43 +22,7 @@ public class MarcaDAO {
     ResultSet rs;
     int r;
     
-     //Operaciones CRUD
-    public List listar() {
-        String sql = "Select * from marca";
-        List<Marca> lista = new ArrayList<>();
-        try {
-            con = cn.Conexion();
-            ps = con.prepareStatement(sql);
-            rs = ps.executeQuery();
-            while (rs.next()) {
-                Marca mar = new Marca();
-                mar.setId(rs.getInt(1));
-                mar.setDescrip(rs.getString(2));
-                mar.setEstado(rs.getString(3));
-                lista.add(mar);
-
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return lista;
-        }
-        public boolean existeMarca(String descrip) {
-            String sql = "Select * from marca where Descripcion=?";
-            try {
-                con = cn.Conexion();
-                ps = con.prepareStatement(sql);
-                ps.setString(1, descrip);
-                rs = ps.executeQuery();
-                if (rs.next()) {
-                    return true; // Si hay algún resultado, significa que la marca ya existe
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return false; // Si no hay ningún resultado, significa que la marca no existe
-        }
+     
 
     public int agregar(Marca mar) {
         String sql = "insert into marca(Descripcion, Estado) values(?,?)";
