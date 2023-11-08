@@ -8,12 +8,17 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest  # Se especifica el nodo 16 en lugar del nodo 12
+    runs-on: ubuntu-latest
     permissions: read-all
     steps:
-      - uses: actions/checkout@v2.4.2
+      - name: Checkout code
+        uses: actions/checkout@v2  # Utiliza la versión más reciente y compatible con el nodo 16
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Set an environment variable
+        run: echo "export EXAMPLE=SomeValue >> $GITHUB_ENV"
+      - name: Get the environment variable
+        run: echo ${{ env.EXAMPLE }}
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
