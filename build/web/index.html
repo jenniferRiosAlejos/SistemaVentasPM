@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Ventas</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Peru Market</h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="#">Inicio</a>
+                    <a href="">Iniciar Sesion</a>
+                    <a href="#">Sobre Nosotros</a>
+                    <a href="#">Menú</a>
+                    <a href="#">Chef</a>
+                    <a href="#">Contacto</a>
+
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+       
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                <div class="baner">                         
+                    <img src="img/baner_1.jpg" alt="" />
+                </div>
+<!--                    <h2>PERU MARKET</h2>
+                    <a href="index.jsp" class="btn bordes">iniciar sesion</a>-->
+                </div>
+              <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor">
+        <div class="texto-nosotros">
+            <p class="bienvenida">Bienvenido a</p>
+            <h1>PERUMARKET</h1>         
+            <a href="index.jsp" class="btn btn-rojo">iniciar sesion</a>
+        </div>
+        <div class="imagenes-nosotros">
+<!--            <div class="imagen1">
+                <img src="/SISTEMA_DE_VENTAS_WEB/assets/nosotros1.jpg" alt="mujer comiendo pizza">
+            </div>-->
+<!--           <div class="imagenes2">
+                <img src="assets/img/nosotros2.webp" alt="mujeres comiendo pizza">
+                <img src="assets/img/nosotros3.webp" alt="plato con pasta">
+            </div>-->
+        </div>
+    </div>
+
+    <section class="menu contenedor">
+        <h2 class="texto-platillos">Categorias de Productos</h2>
+        <div class="botones-platillos">
+            <button class="todos btn btn-verde">Todos</button>
+            <button class="ensaladas btn btn-verde">Abarrotes</button>
+            <button class="pasta btn btn-verde">Bebidas</button>
+            <button class="pizza btn btn-verde">Embutidos</button>
+            <button class="postres btn btn-verde">Herramientas</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="ensalada">
+                <img src="img/agua.jpg" alt="x">
+                <h2>Aguas</h2>
+                <p>San Mateo 7 litros.</p>
+                <div class="precio">
+                    <p>s/. 8.9</p>
+<!--                    <button><i class="fas fa-shopping-basket"></i></button>-->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img src="img/pollo.jpg" alt="y">
+                <h2>Pollo</h2>
+                <p>Kilo de pollo.</p>
+                <div class="precio">
+                    <p>s/. 12.0</p>
+<!--                    <button><i class="fas fa-shopping-basket"></i></button>-->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img src="img/arroz.png" alt="z">
+                <h2>Arroz</h2>
+                <p>Bolsa de 5 Kg.</p>
+                <div class="precio">
+                    <p>s/. 30.0</p>
+<!--                    <button><i class="fas fa-shopping-basket"></i></button>-->
+                </div>
+            </div>
+           <div class="platillo" data-platillo="ensalada">
+                <img src="img/azucar.png" alt="z"/>
+                <h2>Azucar</h2>
+                <p>Bolsa de 5 Kg.</p>
+                <div class="precio">
+                    <p>s/. 15.0</p>
+<!--                    <button><i class="fas fa-shopping-basket"></i></button>-->
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">               
+                <img src="img/leche.jpg" alt="z"/>
+                <h2>Leche Entera</h2>
+                <p>Caja de 1 Kg.</p>
+                <div class="precio">
+                    <p>s/. 4.0</p>
+<!--                    <button><i class="fas fa-shopping-basket"></i></button>-->
+                </div>
+            </div>
+             <div class="platillo" data-platillo="ensalada">                              
+                <img src="img/Aceite.png" alt="z"/>
+                <h2>Aceite</h2>
+                <p>Botella 1 Kg.</p>
+                <div class="precio">
+                    <p>s/. 4.0</p>
+<!--                    <button><i class="fas fa-shopping-basket"></i></button>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+<!--    <section class="chef contenedor">
+        <h2>Director Ejecutivo</h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3>La excelencia está en la diversidad y el modo de progresar
+                    es conocer y comparar las diversidades de productos, culturas y
+                    técnicas
+                </h3>
+                <p>
+
+                </p>
+                <a href="#" class="btn btn-verde">Leer Bíografia</a>
+            </div>
+            <div class="imagen-chef">
+                <img src="/SISTEMA_DE_VENTAS_WEB/img/cep.jpg" alt="fotografia del jefe">
+            </div>
+        </div>
+    </section>-->
+
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fas fa-map-marker-alt"></i>C. 40, Los Olivos 15306</p>
+            <p><i class="fas fa-envelope"></i> Ventas@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i>+51 966 485 122</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <form class="formulario">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Pedro" id="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input type="text" placeholder="Pedro" id="apellidos">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="+90 543 779 9410" id="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar">
+            </div>
+            
+        </form>
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>C. 40, Los Olivos 15306</p>
+            </div>
+            <div class="info">
+                <h3>Días especiales</h3>
+                <p>Sabados y Jueves 7am - 11pm</p>
+                <p>+51 957 378 086</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Domingo 7am - 11pm</p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Noticias</h3>
+                <p>suscribete para recibir más noticias</p>
+                <input type="email" placeholder="Tu correo">
+                <input type="submit" class="btn btn-verde" value="Suscribirse">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2023 </p>
+    </footer>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
